@@ -23,9 +23,9 @@
         style="display:none;">
     </div>
           <div class="mb-3">
-              <label> Username </label>
-              <input type="text" name="user" class="form-control" placeholder="Enter Username" id="username_register">
-              <span class="message error user_error"></span>
+              <label> FullName </label>
+              <input type="text" name="fullname" class="form-control" placeholder="Enter Username" id="fullname_register">
+              <span class="message error fullname_error"></span>
           </div>
           <div class="mb-3">
               <label>Email</label>
