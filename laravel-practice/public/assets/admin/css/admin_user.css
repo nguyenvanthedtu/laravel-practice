@@ -1,0 +1,207 @@
+.clred {
+    color: red;
+}
+
+.cus_table {
+    width: 40%;
+}
+
+.cus_select {
+    width: 40%;
+}
+
+.cus_select_role {
+    width: 40%;
+}
+
+.group_button {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.btn_create {
+    margin-right: 12px;
+    margin-left: 132px;
+}
+
+.input_file {
+    height: 45px;
+}
+
+.css_td {
+    padding-top: 17px !important;
+}
+
+.css_alter {
+    margin-bottom: 0px;
+}
+
+.title-order {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal-header .close {
+    padding: 2rem 2rem;
+    margin: -6rem -2rem -1rem auto;
+}
+.td {
+    width: 24%;
+    font-weight: bold;
+    color: chocolate;
+}
+
+.clr-black {
+    font-size: large;
+    font-family: none;
+    color: black;
+}
+
+.status {
+    width: 80%;
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 0.7em;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+.status-category {
+    width: 35%;
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 0.7em;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.cus-status {
+    width: 30%;
+    padding: 0px 0px;
+    font-size: 12px;
+    height: 22px;
+}
+
+.status-open {
+    background: #2f56c8;
+}
+.status-lock {
+    background: #d82c2c;
+}
+
+.modal-content {
+    width: 100%;
+    margin-left: 100px;
+    margin-bottom: 110px;
+}
+
+.cus-modal-details {
+    width: 80%;
+}
+
+.modal-body {
+    margin-left: 20px;
+    line-height: 35px;
+}
+
+.img-user {
+    width: 133px;
+    position: relative;
+    display: inline-block;
+}
+
+.add-img {
+    margin-top: 10px;
+    width: 185px;
+    position: relative;
+    display: inline-block;
+}
+
+.role {
+    width: 80%;
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 0.7em;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+.image{
+    width: 30px;
+}
+.role-user {
+    background: #2f56c8;
+}
+.role-admin {
+    background: rgb(241, 14, 241);
+}
+.role-supply {
+    background: orange;
+}
+
+.cus-role {
+    width: 30%;
+    padding: 0px 0px;
+    font-size: 12px;
+    height: 22px;
+}
+
+.h6 {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+.css-search {
+    display: flex;
+    margin-left: 280px;
+}
+.css-header-table {
+    display: flex;
+}
+
+.css-search-sex {
+    margin-left: 10px;
+    width: 349px;
+}
+
+.css-search-role {
+    margin-left: -195px;
+    width: 349px;
+}
+
+.css-search-status {
+    margin-left: -195px;
+    width: 370px;
+}
+
+.btn-search {
+    margin-left: -208px;
+}
+
+.btn-reset {
+    margin-left: 10px;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-add {
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+
+.td-role {
+    width: 83.775px;
+}
+.image-admin {
+    width: 100px;
+}

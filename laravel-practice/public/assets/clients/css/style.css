@@ -1,0 +1,9 @@
+.text-register {
+    font-size: 13px;
+    font-style: italic;
+}
+.message{
+  color:red;
+  font-weight:700;
+  font-size:14px;
+}
