@@ -27,9 +27,7 @@ class HomeController extends Controller
         $commentList = Comment::latest()->simplePaginate(4);
         return view('users.contents.detail',compact('post','commentList'));
     }
-
-   
-
+    
     public function search(Request $request){
         $search = $request->input('search');
         $posts = Post::latest()->where('title','LIKE', "%{$search}")
