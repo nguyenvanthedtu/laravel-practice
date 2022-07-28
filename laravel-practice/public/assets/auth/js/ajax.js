@@ -17,19 +17,24 @@ $(document).ready(function() {
             dataType: 'json',
             success: function(data) {
                 let success = $(".success").show();
-                success.text(data.msg);
-                switch (data.role) {
-                    case 1:
-                        if (data.status == true) {
-                            window.location = data.redirect_location;
+                if(data.status == true){
+                    switch (data.role) {
+                        case 1:
+                            if (data.status == true) {
+                                success.text(data.msg);
+                                window.location = data.redirect_location;
+                            }
+                            break;
+                            case 2:
+                                if (data.status == true) {
+                                    success.text(data.msg);
+                                    window.location = data.redirect_location;
+                            } 
+                            break;
                         }
-                        break;
-                    case 2:
-                        if (data.status == true) {
-                            window.location = data.redirect_location;
-                        } 
-                        break;
-                    }
+                }else{
+                    success.text('Email or Password is incorrect');
+                }
             },
             error: function(error) {
                 $(".msg_error").show();
@@ -40,8 +45,6 @@ $(document).ready(function() {
                         $("." + key + "_error").text(responJson[key]);
                     }
                 }
-             
-
             }
         });
 
@@ -71,9 +74,7 @@ $(document).ready(function() {
                         $("." + key + "_error").text(responJson[key]);
                     }
                 }
-             
-
-            }
+        }
     });
   });
 });
