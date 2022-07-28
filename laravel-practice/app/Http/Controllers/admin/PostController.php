@@ -20,6 +20,7 @@ class PostController extends Controller
     {
         $title = "Post List";
         $posts = Post::latest()->paginate(4);
+        
         $user = User::with('posts')->where('id', '=', auth()->user()->id)->first();
         return view('admin.posts.index', compact('title', 'user', 'posts'));
     }

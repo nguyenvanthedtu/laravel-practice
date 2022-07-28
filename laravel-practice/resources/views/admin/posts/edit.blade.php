@@ -59,19 +59,7 @@
                                 @enderror
                             </td>
                         </tr>
-                        <tr>
-                            <td class="css_td">Status <span class="clred">*</span></td>
-                            <td>
-                                <select class="form-select form-control" aria-label="Default select example" id="status"
-                                    name="status">
-                                    <option value="1" {{ $post->status == '1' ? 'selected' : '' }}>Open</option>
-                                    <option value="0" {{ $post->status == '0' ? 'selected' : '' }}>Lock</option>
-                                </select>
-                                @error('status')
-                                    <span class="message errors category_error">{{ $message }}</span>
-                                @enderror
-                            </td>
-                        </tr>
+                    
                         <tr>
                             <td class="css_td cus_css_td">Content <span class="clred">*</span></td>
                             <td>

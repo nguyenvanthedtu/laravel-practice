@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\user;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CommentRequest;
 use App\Models\Comment;
 use App\Models\Post;
 use COM;
@@ -15,26 +16,14 @@ class CommentController extends Controller
     {
         $this->comment = new Comment();
     }
-    public function comment(Request $request,$id){
-        $post = Post::where('id', $id)->firstOrFail();
-        $this->comment->content = $request->content;
-        $this->comment->user_id = auth()->user()->id;
-        $this->comment->post_id = $post->id;
-        $commentList = $post->latestComment;
-        $count = count(Comment::where('id',$id)->get());
-        $commentList->count = $count; 
-        $this->comment->save($request->all());
-        // if($this->comment->save($request->all())){
-        //     // if($commentList->count() > 0){
-        //     //     foreach ($commentList as $comment){
-        //     //         return response()->json($comment);
-                
-        //     //         }
-                
-        //     //     }
-        //         return back();
-        // }
+    
+    public function comment(CommentRequest $request){
+        $post = Post::where('id',$request->id)->first();
+        $attibutes['content'] = $request->content;
+        $attibutes['user_id'] = auth()->user()->id;
+        $attibutes['post_id'] = $post->id;
+        $post->latestComments;
+        $this->comment->create($attibutes);
         return back();
-            
     }
 }

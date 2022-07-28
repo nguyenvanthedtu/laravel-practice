@@ -5,7 +5,7 @@
             @foreach ($categories as $category)
                 <div class="col-sm-6">
                     <ul class="list-unstyled mb-0">
-                        <li><a href="{{route('category', $category->id)}}">{{ $category->name }}</a></li>
+                        <li><a class ="text-decoration-none" href="{{route('category', $category->id)}}">{{ $category->name }}</a></li>
                     </ul>
                 </div>
             @endforeach

@@ -9,9 +9,7 @@
     <!-- Page header with logo and tagline-->
     <div class="container">
         @yield('content')
-
     </div>
-
     @include('login')
     @include('register')
     @include('users.layout.footer')

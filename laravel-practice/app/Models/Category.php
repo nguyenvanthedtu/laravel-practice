@@ -20,4 +20,7 @@ class Category extends Model
             Post::class,'category_posts','category_id','post_id'
         );
     } 
+    public function latestPosts() {
+        return $this->posts()->latest();
+    }
 }

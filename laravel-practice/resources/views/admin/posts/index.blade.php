@@ -41,10 +41,16 @@
                         </tr>
                     </thead>
                     <tbody>
+                       
+                        
+                      
                         @if ($posts -> count() > 0)
-                        @foreach ($posts as $key => $post)
+                        <?php
+                        $i = ($posts->currentpage()-1)*$posts->perpage()+1;
+                         ?>
+                        @foreach ($posts as  $post)
                             <tr>
-                                <td>{{ $key + 1}}</td>
+                                <td> {{ $i ++}}</td>
                                 <td>
                                     <img src="{{asset('storage/images/'.$post->image )}}" width="70px" height="70px" alt="">
                                 </td>
@@ -89,8 +95,10 @@
                     </tbody>
                 </table>
                 <div class='d-flex justify-content-end'>
-                    {{ $posts->perPage() }}
+                    {{$posts ->links()}}
+
                 </div>
+              
             </div>
         </div>
     </div>

@@ -42,7 +42,10 @@
                 <div class="form-group col-md-12">
                     <textarea placeholder="Type your comment" class="form-control" value="" name="content" id="content"></textarea>
                 </div>
-                <span class="message error comment_error"></span>
+                @error('content')
+                    
+                <span class="message error comment_error">{{$message}}</span>
+                @enderror
                     
        
                 <div class="form-group col-md-12 mt-5">

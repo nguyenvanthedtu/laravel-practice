@@ -38,7 +38,6 @@ class PostRequest extends FormRequest
                     'image' => 'nullable',
                     'category_id' => 'required',
                     'content' => 'required|min:10',
-                    'status' => '',
                 ];
             }   
         }

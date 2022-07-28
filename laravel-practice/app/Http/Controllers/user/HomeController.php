@@ -18,13 +18,13 @@ class HomeController extends Controller
 
     public function show($id){
         $category = Category::find($id);
-        $postList = $category->posts()->paginate(4);
+        $postList = $category->latestPosts()->paginate(4);
         return view('users.contents.categories', compact('postList','category'));
     }
 
     public function detail($id){
         $post = Post::find($id);
-        $commentList = Comment::latest()->simplePaginate(4);
+        $commentList = $post->latestComments()->simplePaginate(4);
         return view('users.contents.detail',compact('post','commentList'));
     }
     

@@ -6,7 +6,6 @@
 <title>Blog Post - Start Bootstrap Template</title>
 <link rel="icon" type="image/x-icon" href="{{asset('assets/clients/images/favicon.ico')}}" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 <link rel="stylesheet" href="{{asset('assets/clients/css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/clients/css/style.css')}}">
 <script src="{{asset('assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
