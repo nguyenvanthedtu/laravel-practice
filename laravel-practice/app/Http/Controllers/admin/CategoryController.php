@@ -11,7 +11,7 @@ class CategoryController extends Controller
 {
     public function __construct()
     {
-        $this->categories = new Category();
+        $this->category = new Category();
     }
 
     public function index()
@@ -22,8 +22,8 @@ class CategoryController extends Controller
 
     public function store(CategoryRequest $request)
     {
-        $this->categories->name = $request->name;
-        $this->categories->save();
+        $this->category->name = $request->name;
+        $this->category->save();
         return response()->json([
             'message' => 'Create category successfully!'
         ]);

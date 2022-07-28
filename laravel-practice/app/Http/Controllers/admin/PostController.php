@@ -37,7 +37,6 @@ class PostController extends Controller
         $attibutes['user_id'] = auth()->user()->id;
         if ($request->hasFile('image')) {
             $filePath =  public_path('storage/images');
-            $uploadPath = 'uploads/posts/';
             $file = $request->file('image');
             $fileName = $file->getClientOriginalName();
             $attibutes['image'] = $fileName;
@@ -49,7 +48,7 @@ class PostController extends Controller
             return redirect(route('admin.posts.index'))->with('msg', 'Create post successfully');
         }
 
-        return redirect(route('admin.posts.index'))->with('fail', 'Create post failed');
+        return redirect(route('admin.posts.index'))->with('msg', 'Create post failed');
     }
 
     public function edit($id)

@@ -69,7 +69,7 @@
                 <div class="title">
                     <strong>
                         {{-- {{Auth::user()->user}} --}}
-                        {{$comment->user->user}}
+                        {{$comment->user->email}}
                      </strong>
                     <span class="date"> 
                         {{$comment->created_at->format('d-m-Y H:i:s')}}

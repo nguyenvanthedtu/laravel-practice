@@ -17,14 +17,11 @@ $(document).ready(function() {
             dataType: 'json',
             success: function(data) {
                 let success = $(".success").show();
-                // console.log(data);
-                // $data = $('.msg_error').msg;
                 success.text(data.msg);
                 switch (data.role) {
                     case 1:
                         if (data.status == true) {
                             window.location = data.redirect_location;
-                            
                         }
                         break;
                     case 2:
@@ -32,8 +29,7 @@ $(document).ready(function() {
                             window.location = data.redirect_location;
                         } 
                         break;
-                }
-          
+                    }
             },
             error: function(error) {
                 $(".msg_error").show();
