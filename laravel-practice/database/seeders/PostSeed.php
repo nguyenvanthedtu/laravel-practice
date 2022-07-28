@@ -16,7 +16,7 @@ class PostSeed extends Seeder
      */
     public function run()
     {
-        Post::factory(30)->create()->each(function ($post){
+        Post::factory(20)->create()->each(function ($post){
             $randomFields = Category::all()->random(rand(1,4))->pluck('id');
             $post->categories()->attach($randomFields);
         });
