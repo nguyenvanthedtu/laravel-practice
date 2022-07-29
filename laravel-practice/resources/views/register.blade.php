@@ -37,12 +37,12 @@
               <input type="password" name="password" class="form-control" placeholder="Enter Password" id="password_register">
               <span class="message error password_error"></span>
           </div>
-          <div class="mb-3">
-              <label>Repeat Password</label>
-              <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" >
-              <span class="message error confirmpassword_error"></span>
-        
-          </div>
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password-add" class="form-control"
+                placeholder="Confirm Password">
+            <span class="message errors confirm_password_error"></span>
+        </div>
           <div class="mb-3">
             <div>
                 <label class="radio-container">Male
