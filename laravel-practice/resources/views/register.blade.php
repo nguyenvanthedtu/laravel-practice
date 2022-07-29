@@ -41,7 +41,7 @@
             <label>Confirm Password</label>
             <input type="password" name="confirm_password" id="confirm_password-add" class="form-control"
                 placeholder="Confirm Password">
-            <span class="message errors confirm_password_error"></span>
+            <span class="message error confirm_password_error"></span>
         </div>
           <div class="mb-3">
             <div>
