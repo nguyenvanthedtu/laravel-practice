@@ -62,14 +62,18 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="#" data-url="{{ route('admin.users.show', $user->id) }}"
-                                            data-id="{{ $user->id }}" class="btn btn-warning btn-sm view-data"
-                                            data-toggle="modal">View</a>
-                                        <a href="{{ route('admin.users.edit', ['id' => $user->id]) }}"
-                                            class="btn btn-warning btn-sm edit-data ">Edit</a>
-                                        <a onclick="return confirm('Are you sure you want to delete this item?')"
-                                            href="{{ route('admin.users.delete', ['id' => $user->id]) }}"
-                                            class="btn btn-danger btn-sm btn-delete">Delete</a>
+                                       
+                                            @if($user->type->name == 'User')
+                                            <a href="#" data-url="{{ route('admin.users.show', $user->id) }}"
+                                                data-id="{{ $user->id }}" class="btn btn-warning btn-sm view-data"
+                                                data-toggle="modal">View</a>
+                                            <a href="{{ route('admin.users.edit', ['id' => $user->id]) }}"
+                                                class="btn btn-warning btn-sm edit-data ">Edit</a>
+                                            <a onclick="return confirm('Are you sure you want to delete this item?')"
+                                                href="{{ route('admin.users.delete', ['id' => $user->id]) }}"
+                                                class="btn btn-danger btn-sm btn-delete">Delete</a>
+                                            
+                                            @endif
                                     </td>
                                 </tr>
                             @endforeach

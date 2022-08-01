@@ -44,7 +44,7 @@ class CategoryController extends Controller
             return redirect(route('admin.categories.index'))->with('msg', 'Update category successfully');
         }
 
-        return redirect(route('admin.categories.index'))->with('faild', 'Update category faild');
+        return redirect(route('admin.categories.index'))->with('msg', 'Update category failed');
     }
 
     public function destroy($id)
